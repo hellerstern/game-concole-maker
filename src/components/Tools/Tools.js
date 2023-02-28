@@ -276,14 +276,6 @@ const Tools = () => {
         <MenuBody>
           {/* {
             CateImgs.map((item, index) => (
-              <MenuItem key={index} onClick={async () => {
-                await setMenuFlag(false);
-                await swiperTo(index);
-              }} curr={myContext.snapIndex} stat={please[index] === null || please[index] === false ? false : true}>
-                <img alt="no img" src={item.image}></img>
-                {item.name}
-                <SBsCheck></SBsCheck>
-              </MenuItem>
             ))
           } */}
           <MenuItem onClick={async () => { await setMenuFlag(false); await swiperTo(0); }} me={0} curr={myContext.snapIndex} stat={myContext.design === null ? false : true}>
